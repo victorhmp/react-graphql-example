@@ -4662,9 +4662,9 @@ verror@1.10.0:
   version "0.4.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles#62ee61d1bb9efdc919e5cf4bb44fabcf9050d255"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.105.1-hkignore.0/public/@types/vtex.render-runtime":
-  version "8.105.1-hkignore.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.105.1-hkignore.0/public/@types/vtex.render-runtime#ef22ba1f72f668cf212f1c532c2c499e3eab545c"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.106.0/public/@types/vtex.render-runtime":
+  version "8.106.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.106.0/public/@types/vtex.render-runtime#545b27f0bb91d7387d45a27a807e06eac2f4908f"
 
 "vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.28.0/public/_types/react":
   version "0.0.0"
