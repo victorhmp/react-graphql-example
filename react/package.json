@@ -23,7 +23,7 @@
     "prop-types": "^15.7.2",
     "typescript": "3.8.3",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.2/public/@types/vtex.css-handles",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.105.1-hkignore.0/public/@types/vtex.render-runtime",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.106.0/public/@types/vtex.render-runtime",
     "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.28.0/public/_types/react"
   }
 }
