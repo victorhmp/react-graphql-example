@@ -1,14 +1,12 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
-import { splitTime } from './modules/time'
+import useCountdown from './hooks/useCountdown'
 
 interface CountdownProps {
   targetDate: string
   countdownHeadline: string
 }
-
-const ONE_SECOND_IN_MILLIS = 1000
 
 const CSS_HANDLES = [
   'countdown',
@@ -17,23 +15,13 @@ const CSS_HANDLES = [
 ] as const
 
 const Countdown: FC<CountdownProps> = ({
-  targetDate = '2020-06-17T15:00:00-03:00',
+  targetDate = '2020-06-17T17:30:00-03:00',
   countdownHeadline = 'Something awesome will happen in: ',
 }) => {
   const handles = useCssHandles(CSS_HANDLES)
 
   const finalDate = new Date(targetDate)
-  const now = Date.now()
-
-  const secondsLeft = (finalDate.getTime() - now) / ONE_SECOND_IN_MILLIS
-
-  const [timeLeft, setTimeLeft] = useState(splitTime(secondsLeft))
-
-  setTimeout(() => {
-    const formattedTimeLeft = splitTime(secondsLeft)
-
-    setTimeLeft(formattedTimeLeft)
-  }, ONE_SECOND_IN_MILLIS)
+  const timeLeft = useCountdown(finalDate)
 
   const countdownValue = `${timeLeft.hours}:${timeLeft.minutes}:${timeLeft.seconds}`
 
