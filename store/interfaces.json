@@ -1,0 +1,8 @@
+{
+  "countdown": {
+    "component": "Countdown"
+  },
+  "product-countdown": {
+    "component": "ProductReleaseCountdown"
+  }
+}

@@ -1,0 +1,5 @@
+query productReleaseDate($productSlug: String) {
+  product(slug: $productSlug) @context(provider: "vtex.search-graphql") {
+    releaseDate
+  }
+}
